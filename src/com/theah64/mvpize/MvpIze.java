@@ -121,11 +121,11 @@ public class MvpIze {
                 // it's header
                 final String[] lineChunks = line.split("\\{");
                 line = lineChunks[0] + "implements " + viewName + " {";
-                line += String.format("\n\n\tprivate %s presenter;", presenterName);
+                line += String.format("\n\n    private %s presenter;", presenterName);
             }
 
             if (line.contains("setContentView")) {
-                line += String.format("\n\n\t\tpresenter = new %s(this);\n", presenterImplName);
+                line += String.format("\n\n\tpresenter = new %s(this);\n", presenterImplName);
             }
 
             sb.append(line).append("\n");

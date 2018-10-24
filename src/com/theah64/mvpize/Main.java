@@ -50,7 +50,7 @@ public class Main {
                                 presenterImplName
                         );
 
-                        MvpIze.createJavaFile(mvpIze.getClassName(), newComponentContent);
+                        MvpIze.createJavaFile(mvpIze.getClassName() + ".new", newComponentContent);
 
                         System.out.println("All done");
 
