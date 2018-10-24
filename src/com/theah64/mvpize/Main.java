@@ -42,15 +42,13 @@ public class Main {
                     final boolean isAutoIntegratable = mvpIze.isAutoIntegratable();
                     if (isAutoIntegratable) {
 
-                        System.out.println(isAutoIntegratable);
-
                         final String newComponentContent = mvpIze.getNewComponentContent(
                                 viewName,
                                 presenterName,
                                 presenterImplName
                         );
 
-                        MvpIze.createJavaFile(mvpIze.getClassName() + ".new", newComponentContent);
+                        MvpIze.createJavaFile(mvpIze.getClassName(), newComponentContent);
 
                         System.out.println("All done");
 

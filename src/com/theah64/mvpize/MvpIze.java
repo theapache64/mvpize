@@ -32,8 +32,6 @@ public class MvpIze {
 
     private static final String PRESENTER_IMPL_FORMAT = "package {PACKAGE_NAME};\n" +
             "\n" +
-            "import {PACKAGE_NAME}.ChannelView;\n" +
-            "\n" +
             "public class {PRESENTER_IMPL_NAME} implements {PRESENTER_NAME} {\n" +
             "    private final {VIEW_NAME} view;\n" +
             "\n" +
@@ -125,7 +123,7 @@ public class MvpIze {
             }
 
             if (line.contains("setContentView")) {
-                line += String.format("\n\n\tpresenter = new %s(this);\n", presenterImplName);
+                line += String.format("\n\n\t\tpresenter = new %s(this);\n", presenterImplName);
             }
 
             sb.append(line).append("\n");
