@@ -35,7 +35,7 @@ public class MvpIze {
             "public class {PRESENTER_IMPL_NAME} implements {PRESENTER_NAME} {\n" +
             "    private final {VIEW_NAME} view;\n" +
             "\n" +
-            "    public ChannelsPresenterImpl({VIEW_NAME} view) {\n" +
+            "    public {PRESENTER_IMPL_NAME}({VIEW_NAME} view) {\n" +
             "        this.view = view;\n" +
             "    }\n" +
             "}\n";
