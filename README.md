@@ -1,7 +1,7 @@
 # mvpize
 A simple command line utility to create MVP components from an activity
 
-[demo](demo.gif)
+![demo](demo.gif)
 
 ### Installation
 
